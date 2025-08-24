@@ -4,7 +4,7 @@ reais = int(input("Qual o seu valor em reais ? "))
 
 if operador == "USD" or operador == "usd":
    resultado = (reais * 0.1762487)
-   print(f"O resultado da conversão é:{resultado}")
+   print(f"O resultado da conversão é: {resultado}")
 
 elif operador == "GIP" or operador == "gip":
    resultado = (reais * 0.1327175)
