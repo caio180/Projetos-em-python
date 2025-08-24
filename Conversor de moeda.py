@@ -1,34 +1,34 @@
-print("1 Dólar dos Estados Unidos USD\n2 Libra de Gibraltar GIP\n3 Libra Esterlina GBP\n4 Peso Chileno CLP\n5 O Rupia do Sri Lanka LKR\n6 Euro EUR\n7 Bitcoin BTC, \n8 Em breve terá 3 novas moedas." )
-operador = int(input("Digite a moeda de seu desejo: "))
+print(" Dólar dos Estados Unidos USD\n Libra de Gibraltar GIP\n Libra Esterlina GBP\n Peso Chileno CLP\n O Rupia do Sri Lanka LKR\n Euro EUR\n Bitcoin BTC, \n Em breve terá 3 novas moedas." )
+operador = input("Digite a moeda de seu desejo: ")
 reais = int(input("Qual o seu valor em reais ? "))
 
-if operador == 1:
+if operador == "USD" or operador == "usd":
    resultado = (reais * 0.1762487)
-   print("O resultado da conversão é:", resultado)
+   print(f"O resultado da conversão é:{resultado}")
 
-elif operador == 2:
+elif operador == "GIP" or operador == "gip":
    resultado = (reais * 0.1327175)
-   print ("O resultado da conversão é:", resultado)
+   print (f"O resultado da conversão é: {resultado}")
 
-elif operador == 3:
+elif operador == "GBP" or operador == "gbp":
    resultado = (reais * 0.1324486)
-   print("O resultado da conversão é:", resultado)
+   print(f"O resultado da conversão é: {resultado}")
 
-elif operador == 4:
+elif operador == "CLP" or operador == "clp":
    resultado = (reais * 165.5629139)
-   print("O resultado da conversão é:", resultado)
+   print(f"O resultado da conversão é: {resultado}")
    
-elif operador == 5:
+elif operador == "LKR" or operador == "lkr":
    resultado = (reais * 52.8541226)
-   print("O resultado da conversão é:", resultado)
+   print(f"O resultado da conversão é: {resultado}")
 
-elif operador == 6:
+elif operador == "EUR" or operador == "eur":
    resultado = (reais * 0.155094)
-   print ("O resultado da conversão é:", resultado)
+   print (f"O resultado da conversão é: {resultado}")
 
-elif operador == 7:
+elif operador == "BTC" or operador == "btc":
    resultado = (reais * 0.0000018)
-   print("O resultado da conversão é:", resultado)
+   print(f"O resultado da conversão é: {resultado}")
 
 else:
    print("Moeda não reconhecida. Por favor, tente novamente.")
