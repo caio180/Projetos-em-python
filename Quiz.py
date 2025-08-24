@@ -33,13 +33,13 @@ for questao in range(11):
         print("Resposta incorreta.") 
  elif questao == 6:
      q6 = str(input("6) Qual Papa ficou apenas 12 dias no Papado ? \n"))
-     if q6 == "Urbano VII":
+     if q6 == "Urbano VII" or q6 == "Urbano 7" or q6 == "urbano VII" or q6 == "urbano 7":
         print("Resposta correta, parabéns.")
      else: 
         print("Resposta incorreta.") 
  elif questao == 7:
      q7 = input("7) Quantos Papas com o nome bento a Igreja católica já teve ? \n")
-     if q7 == "16":
+     if q7 == "16" or q7 == "dezesseis" or q7 == "Dezesseis" or q7 == "16 papas" or q7 == "16 Papas.":
         print("Resposta correta, parabéns.")
      else: 
         print("Resposta incorreta.")
@@ -57,7 +57,7 @@ for questao in range(11):
         print("Resposta incorreta.")
  elif questao == 10:
      q10 = str(input("10) Em qual país o Papa Pio XII nasceu ? \n"))
-     if q10 == "Itália":
+     if q10 == "Itália" or q10 == "italia" or q10 == "itália."  or q10 == "Italia":
         print("Resposta correta, parabéns.")
      else: 
         print("Resposta incorreta.") 
