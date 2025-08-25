@@ -1,22 +1,22 @@
 print("Calculadora: \n+ Soma \n- Subtração \n* Multiplicação \n/ Divisão \n√ Raiz quadrada \n** Exponenciação \n// Divisão inteira \n% Resto da divisão")
 num1 = int(input("Digite um número: "))
-operador = input("Digite uma operação: ")
-if operador != "√":
+operação = input("Digite uma operação: ")
+if operação != "√":
  num2 = int(input("Digite outro número: "))
 
-if operador == "+":
+if operação == "+":
     print(" O resultado é:", num1 + num2)
 
-elif operador == "-":
+elif operação == "-":
     print(" O resultado é:", num1 - num2)
 
-elif operador == "*":
+elif operação == "*":
     print(" O resultado é:", num1 * num2)
 
-elif operador == "/":
+elif operação == "/":
     print(" O resultado é:", num1 / num2) 
 
-elif operador == "√":
+elif operação == "√":
     import cmath
     raiz_quadrada = cmath.sqrt(num1)
     if num1 > 0 :
@@ -24,13 +24,13 @@ elif operador == "√":
         raiz_quadrada = math.sqrt(num1)
     print(" O resultado é:", raiz_quadrada)
 
-elif operador == "**":
+elif operação == "**":
     print("O resultado é:", num1 ** num2)
 
-elif operador == "//":
+elif operação == "//":
     print("O resultado é:", num1 // num2)
 
-elif operador == "%":
+elif operação == "%":
     print("O resto da divisão é:", num1 % num2)
 
 else:
