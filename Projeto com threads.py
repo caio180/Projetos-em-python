@@ -11,7 +11,7 @@ def verificar_par():
         print(f"{numero} é impar")
 
 #Função que será executada pela thread
-def numeros_primos():
+def verificar_numeros_primos():
     num = int(input("Digite um número para verificar se é primo: "))
 
     if num <= 1:
@@ -65,7 +65,7 @@ def validar_cpf():
 
 #Cria as threads
 thread1 = threading.Thread(target=verificar_par)
-thread2 = threading.Thread(target=numeros_primos)
+thread2 = threading.Thread(target=verificar_numeros_primos)
 thread3 = threading.Thread(target=validar_cpf)
 
 #Inicia as threads
