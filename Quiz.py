@@ -61,4 +61,3 @@ for questao in range(11):
         print("Resposta correta, parabéns.")
      else: 
         print("Resposta incorreta.") 
-      
