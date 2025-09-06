@@ -44,19 +44,19 @@ def validar_cpf():
        if cpf_numeros == cpf_numeros[0] * 11:
         print(f"{cpf} é inválido, contém todos os números iguais.")
        else:
-            # Cálculo do primeiro dígito
+            #Cálculo do primeiro dígito
              soma1 = sum(int(cpf_numeros[i]) * (10 - i) for i in range(9))
              digito1 = (soma1 * 10) % 11
              if digito1 == 10:
               digito1 = 0
 
-            # Cálculo do segundo dígito
+            #Cálculo do segundo dígito
              soma2 = sum(int(cpf_numeros[i]) * (11 - i) for i in range(10))
              digito2 = (soma2 * 10) % 11
              if digito2 == 10:
               digito2 = 0
 
-            # Verificação final
+            #Verificação final
              if cpf_numeros[-2:] == f"{digito1}{digito2}":
                print(f"{cpf} é válido.")
              else:
