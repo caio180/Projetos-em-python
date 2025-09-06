@@ -38,11 +38,11 @@ def validar_cpf():
 
 #Verifica se o CPF tem 11 dígitos
    if len(cpf_numeros) != 11:
-          print("CPF inválido! Ele deve conter 11 dígitos numéricos.")
+          print(f"O cpf: {cpf} é inválido, pois ele deve conter 11 dígitos numéricos.")
    else:
     #Verifica se todos os dígitos são iguais
        if cpf_numeros == cpf_numeros[0] * 11:
-        print(f"{cpf} é inválido, contém todos os números iguais.")
+        print(f"O cpf: {cpf} é inválido, contém todos os números iguais.")
        else:
             #Cálculo do primeiro dígito
              soma1 = sum(int(cpf_numeros[i]) * (10 - i) for i in range(9))
@@ -58,9 +58,9 @@ def validar_cpf():
 
             #Verificação final
              if cpf_numeros[-2:] == f"{digito1}{digito2}":
-               print(f"{cpf} é válido.")
+               print(f"O cpf: {cpf} é válido.")
              else:
-               print(f"{cpf} é inválido.")
+               print(f"O cpf: {cpf} é inválido.")
 
 
 #Cria as threads
