@@ -1,1 +1,0 @@
-O projeto.py, é muito simples, basta clicar no botão play, que ele irá mostrar a palavra "Hello World" no terminal.

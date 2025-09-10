@@ -1,7 +1,0 @@
-git clone https://github.com/seu-usuario/seu-repositorio , ele vai colocar seu repositorio no vscode.
-touch projeto.py
-touch documentacao.txt
-Depois de fazer as alterações nos arquivos acima, clique no botão salvar.
-git add . , ele vai pegar os arquivos.
-git commit -m "Mensagem" , vai salvar as alterações, e mostrar no repositorio remoto.
-git push , irá mandar para o repositorio remoto github.
