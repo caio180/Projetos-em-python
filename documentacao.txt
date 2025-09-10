@@ -1,9 +1,0 @@
-Esses comandos são executados no terminal:
-
-git clone https://github.com/seu-usuario/seu-repositorio , ele vai colocar seu repositorio no vscode.
-touch projeto.py, criei um arquivo para o projeto.
-touch documentacao.txt , arquivo criado para explicar estes comandos do git.
-Quando termiar os dois arquivos, irei salvar no local.
-git add ., Vai adicionar os dois arquivos.
-git commit -m "Mensagem" , Vai salvar as alterações para mandar pro github.
-git push , Vai enviar para o repositorio online do github.
