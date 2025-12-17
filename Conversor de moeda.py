@@ -1,6 +1,6 @@
 print(" Dólar dos Estados Unidos USD\n Libra de Gibraltar GIP\n Libra Esterlina GBP\n Peso Chileno CLP\n O Rupia do Sri Lanka LKR\n Euro EUR\n Bitcoin BTC, \n Em breve terá 3 novas moedas." )
-moeda = input("Digite a moeda de seu desejo: ")
-reais = int(input("Qual o seu valor em reais ? "))
+moeda = input("Digite a moeda de seu desejo: ").strip().lower()
+reais = int(input("Qual o seu valor em reais ? ")).strip()
 
 if moeda.lower() in ("1", "usd"):
    resultado = (reais * 0.1762487)
