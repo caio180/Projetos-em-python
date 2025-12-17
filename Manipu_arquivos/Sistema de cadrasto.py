@@ -1,13 +1,13 @@
 opcoes = input("Digite uma dessas opções: \n1)Criar uma conta \n2) Já tenho uma conta \n ")
 
-if opcoes == "1" or opcoes == "Criar uma conta" or opcoes == "criar uma conta" or opcoes == "criar conta":
+if opcoes in ("1", "Criar uma conta", "criar uma conta", "criar conta"):
     with open("cadrastos.txt", "a") as cadastro:
          criar_email = input("Digite o nome do email que deseja, exemplo (cleito.silva@gmail.com): ")
-         criar_senha = input("Digite a senha que deseja, (lembre-se: sua senha tem que ser forte): ")
+         criar_senha = input("Digite a senha que deseja, (lembre-se: Sua senha tem que ser forte): ")
          cadastro.write("Email cadastrado: " + criar_email + "\n")
          cadastro.write("Senha: " + criar_senha + "\n\n") 
 
-elif opcoes == "2" or opcoes == "Já tenho uma conta" or opcoes == "Já tenho":
+elif opcoes in ("2", "Já tenho uma conta", "Já tenho"):
          try:
             with open("cadastros.txt", "r", encoding="utf-8") as cadastrados:
                 print(cadastrados.read())
