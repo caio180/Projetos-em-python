@@ -21,7 +21,7 @@ elif escala.lower() in("kelvin para fahrenheit", "k para f", "5"):
     tkf = float(input("Kf = "))
     tempkf = (tkf-273.15) * 9/5 + 32
     print(round(tempkf, 2), "°F.")
-elif escala.lower() in("fahrenheit para kelvin", "f para k", "Fpk", "6"):
+elif escala.lower() in("fahrenheit para kelvin", "f para k", "6"):
     tfk = float(input("Fk = "))
     tempfk = (tfk-32) * 5/9 + 273.15 
     print(round(tempfk, 2), "°K.")
