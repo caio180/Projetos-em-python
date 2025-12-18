@@ -1,5 +1,11 @@
+import time
+
 print("Quiz")
 questao = input("Para começar o quiz digite o número 1: ")
+
+print("Iniciando...")
+time.sleep(3)
+
 for questao in range(11):
  if questao == 1:
      q1 = int(input("1) Quem foi o primeiro Papa da igreja Católica ? \n1 - Pedro \n2 - Tiago \n3 - Matias \n4 - André \n"))
