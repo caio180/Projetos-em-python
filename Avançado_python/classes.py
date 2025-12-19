@@ -1,3 +1,4 @@
+#Exemplos básicos para não esquecer como funciona.
 class Vendedor:
     def __init__(self):
         self.nome = input("Digite o nome do vendedor: ")
