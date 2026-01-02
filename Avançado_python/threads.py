@@ -1,16 +1,16 @@
 import threading
 import math
 
-#Função que será executada pela thread
+
 def verificar_par():
     numero = int(input("Digite um número para verificar se é par ou impar: "))
-    #Vai verificar se é par ou impar, se numero % 2 for igual 0 ele vai ser par, se não vai ser impar
+    
     if numero % 2 == 0:
         print(f"{numero} é par")
     else:
         print(f"{numero} é impar")
 
-#Função que será executada pela thread
+
 def verificar_numeros_primos():
     num = int(input("Digite um número para verificar se é primo: "))
 
@@ -31,32 +31,32 @@ def verificar_numeros_primos():
             return
     print(f"{num} é primo")
 
-#Função que será executada pela thread
+
 def validar_cpf():
    cpf = input("Digite o CPF (somente números): ")
    cpf_numeros = ''.join(filter(str.isdigit, cpf))
 
-#Verifica se o CPF tem 11 dígitos
+
    if len(cpf_numeros) != 11:
           print(f"O cpf: {cpf} é inválido, pois ele deve conter 11 dígitos numéricos.")
    else:
-    #Verifica se todos os dígitos são iguais
+
        if cpf_numeros == cpf_numeros[0] * 11:
         print(f"O cpf: {cpf} é inválido, contém todos os números iguais.")
        else:
-            #Cálculo do primeiro dígito
+           
              soma1 = sum(int(cpf_numeros[i]) * (10 - i) for i in range(9))
              digito1 = (soma1 * 10) % 11
              if digito1 == 10:
               digito1 = 0
 
-            #Cálculo do segundo dígito
+            
              soma2 = sum(int(cpf_numeros[i]) * (11 - i) for i in range(10))
              digito2 = (soma2 * 10) % 11
              if digito2 == 10:
               digito2 = 0
 
-            #Verificação final
+            
              if cpf_numeros[-2:] == f"{digito1}{digito2}":
                print(f"O cpf: {cpf} é válido.")
              else:
