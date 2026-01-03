@@ -7,7 +7,7 @@ if opcoes.lower() in ("1", "criar uma conta", "criar conta"):
          cadastro.write("Email cadastrado: " + criar_email + "\n")
          cadastro.write("Senha: " + criar_senha + "\n\n") 
 
-elif opcoes.lower() in ("2", "já tenho uma conta", "já tenho", "ja tenho"):
+elif opcoes.lower() in ("2", "já tenho uma conta", "já tenho conta", "ja tenho"):
          try:
             with open("cadastros.txt", "r", encoding="utf-8") as cadastrados:
                 print(f"Contas cadrastados: {cadastrados.readline()}")
