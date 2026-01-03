@@ -1,4 +1,4 @@
-opcoes = input("Digite uma dessas opções: \n1)Criar uma conta \n2) Já tenho uma conta \n ")
+opcoes = input("Digite uma dessas opções: \n1)Criar uma conta \n2) Já tenho uma conta \nDigite a opção desejada: ")
 
 if opcoes.lower() in ("1", "criar uma conta", "criar conta"):
     with open("cadrastos.txt", "a") as cadastro:
@@ -10,7 +10,7 @@ if opcoes.lower() in ("1", "criar uma conta", "criar conta"):
 elif opcoes.lower() in ("2", "já tenho uma conta", "já tenho", "ja tenho"):
          try:
             with open("cadastros.txt", "r", encoding="utf-8") as cadastrados:
-                print(cadastrados.read())
+                print(f"Contas cadrastados: {cadastrados.readline()}")
          except FileNotFoundError:
             print("Nenhum cadastro encontrado.")
 
