@@ -1,4 +1,4 @@
-opcoes = input("Digite a opção desejada: \n1) Adicionar contatos \n2) Listar contatos \n3) Buscar um contato \n4) Remover contato \nOpção desejada: ")
+opcoes = input("Digite a opção desejada: \n1) Adicionar contatos \n2) Listar contatos \n3) Buscar um contato \nOpção desejada: ")
 
 if opcoes.lower() in ("1", "adicionar", "adicionar contatos", "add"):
     nome = input("Digite o nome do contato: ")
