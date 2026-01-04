@@ -10,7 +10,7 @@ if opcoes.lower() in ("1", "adicionar", "adicionar contatos", "add"):
 elif opcoes.lower() in ("2", "listar", "listar contatos"):
   try: 
      with open("agenda_contatos.csv", "r") as arquivo:
-        contatos_salvos = arquivo.readline()
+        contatos_salvos = arquivo.readlines()
         if len(contatos_salvos) == 0:
             print("Agenda fazia")
         else:
