@@ -1,7 +1,6 @@
 import threading
 import math
 
-
 def verificar_par():
     numero = int(input("Digite um número para verificar se é par ou impar: "))
     
@@ -63,17 +62,15 @@ def validar_cpf():
                print(f"O cpf: {cpf} é inválido.")
 
 
-#Cria as threads
+
 thread1 = threading.Thread(target=verificar_par)
 thread2 = threading.Thread(target=verificar_numeros_primos)
 thread3 = threading.Thread(target=validar_cpf)
 
-#Inicia as threads
 thread1.start()
 thread2.start()
 thread3.start()
 
-#Aguarda as threads terminarem antes de continuar o código principal.
 thread1.join()
 thread2.join()
 thread3.join()
