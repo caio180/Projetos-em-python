@@ -77,4 +77,4 @@ elif opcoes.lower() in ("3", "alterar senha"):
         print("Email ou senha incorretos, tente novamente.")
 
 cursor.close()
-banco.close()      
+banco.close()   
