@@ -2,4 +2,6 @@
 
 Este projeto é um sistema simples de cadastro, login e alteração de senha, feito em Python, usando SQLite3 como banco de dados local e a biblioteca bcrypt para manter as senhas seguras. Ele foi criado com fins educacionais e serve para praticar conceitos básicos de programação, autenticação de usuários e uso de banco de dados de forma prática.
 
+## Funcionamento: 
+
 Com ele, você pode criar uma conta, fazer login e alterar sua senha através de um menu interativo no terminal. Todos os dados são armazenados em um banco local, que é criado automaticamente na primeira vez que você executa o programa. As senhas são protegidas com criptografia e o sistema garante que elas tenham pelo menos oito caracteres.Para rodar o projeto, basta ter o Python instalado e a biblioteca bcrypt no ambiente. Se ainda não tiver, pode instalar com o comando `pip install bcrypt`. Depois, é só executar o arquivo principal com `python main.py`. O projeto é simples, utiliza apenas Python, SQLite3 e bcrypt, e é perfeito para quem está começando a aprender como funciona um sistema de login básico na prática.
