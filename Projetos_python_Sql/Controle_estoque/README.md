@@ -6,13 +6,13 @@ O projeto foi criado para fins educacionais, com o objetivo de praticar conceito
 
 ## Funcionamento:
 
-Adicionar produtos com seus respectivos preços
+- Adicionar produtos com seus respectivos preços
 
-Listar todos os produtos cadastrados
+- Listar todos os produtos cadastrados
 
-Calcular o valor total dos produtos em estoque
+- Calcular o valor total dos produtos em estoque
 
-Armazenamento persistente utilizando SQLite
+- Armazenamento persistente utilizando SQLite
 
 Caso não existam produtos cadastrados, o sistema informa ao usuário.
 
