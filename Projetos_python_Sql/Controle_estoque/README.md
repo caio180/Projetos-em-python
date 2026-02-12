@@ -31,7 +31,7 @@ No terminal, digite os seguintes comandos:
 
 2 - Acesse a pasta do projeto:
    
-   cd cd Projetos-em-python/Projetos_python_Sql
+   cd Projetos-em-python/Projetos_python_Sql
 
 3 - Execute o arquivo principal:
    
