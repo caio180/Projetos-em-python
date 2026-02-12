@@ -40,7 +40,7 @@ No terminal, digite os seguintes comandos:
 ## Tecnologias:
 
 - Python
-- Biblioteca SQLite
+- Biblioteca SQLite3
 
 ## Autor:
 
