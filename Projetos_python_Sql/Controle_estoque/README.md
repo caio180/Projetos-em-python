@@ -4,7 +4,7 @@ Este projeto é um sistema bem simple de controle de estoque. Ele permite adicio
 
 O projeto foi criado para fins educacionais, com o objetivo de praticar conceitos básicos de programação e manipulação de banco de dados.
 
-## Funcionamento:
+## Funcionalidades:
 
 - Adicionar produtos com seus respectivos preços
 
