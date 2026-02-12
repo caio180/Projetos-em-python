@@ -4,7 +4,7 @@ Este projeto é um sistema bem simple de agenda de contatos. Ele permite adicion
 Este projeto foi criado para fins educacionais, com o objetivo de praticar conceitos básicos de programação.
 
  
-## Funcionamento:
+## Funcionalidades:
 - Adicionar contatos
 
 - Listar os contatos cadastrados
