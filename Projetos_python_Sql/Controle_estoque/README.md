@@ -31,7 +31,7 @@ No terminal, digite os seguintes comandos:
 
 2 - Acesse a pasta do projeto:
    
-   cd Projetos-em-python/Projetos_python_Sql
+   cd Projetos-em-python/Projetos_python_Sql/Controle_estoque
 
 3 - Execute o arquivo principal:
    
