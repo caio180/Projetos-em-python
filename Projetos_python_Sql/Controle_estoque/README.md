@@ -26,12 +26,15 @@ Caso não existam produtos cadastrados, o sistema informa ao usuário.
 No terminal, digite os seguintes comandos:
 
 1 - Clone o repositório:
-   git clone git clone https://github.com/caio180/Projetos-em-python.git
+   
+   git clone https://github.com/caio180/Projetos-em-python.git
 
 2 - Acesse a pasta do projeto:
+   
    cd cd Projetos-em-python/Projetos_python_Sql
 
 3 - Execute o arquivo principal:
+   
    python main.py
 
 ## Tecnologias:
