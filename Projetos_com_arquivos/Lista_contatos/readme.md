@@ -25,7 +25,7 @@ E caso não existam os contatos, o sistema informa ao usuário.
 
 2 - Acesse a pasta do projeto:
    
-   cd Projetos-em-python/Projetos_com_arquivos
+   cd Projetos-em-python/Projetos_com_arquivos/Lista_contatos
 
 3 - Execute o arquivo principal:
    
