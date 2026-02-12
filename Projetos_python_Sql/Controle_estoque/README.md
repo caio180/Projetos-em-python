@@ -1,7 +1,46 @@
 # Sistema de Controle de Estoque
 
-Este projeto é um sistema bem simple de controle de estoque, onde você pode adicionar produto, listar os produtos e somar, feito em python e foi usado o bando de dados SQLlite3 para armazenar as informações, foi criado para fins educacionais e também para praticar os conceitos básicos de programação.
+Este projeto é um sistema bem simple de controle de estoque. Ele permite adicionar produtos, listar os produtos cadastrados e calcular o valor total do estoque. 
+
+O projeto foi criado para fins educacionais, com o objetivo de praticar conceitos básicos de programação e manipulação de banco de dados.
 
 ## Funcionamento:
 
-Basicamente, você pode adicionar um produto junto com o preço dele, listar os produtos existentes, caso não tenha produtos o sistema irá avisar. E pode somar todos os preços dos produtos e todas essas informações são armazenadas no banco de dados. Para rodar o projeto, precisa ter o python no computador. Depois, é só executar o arquivo principal com `python main.py`. O projeto é simples, mas é bom para quem está começando na área ou tem curiosidade e também revisar conteúdos.
+Adicionar produtos com seus respectivos preços
+
+Listar todos os produtos cadastrados
+
+Calcular o valor total dos produtos em estoque
+
+Armazenamento persistente utilizando SQLite
+
+Caso não existam produtos cadastrados, o sistema informa ao usuário.
+
+## Pré-requisitos:
+
+- Python 3.x instalado
+- Biblioteca SQLite3 (normalmente já vem junto com o python)
+
+## Como executar o projeto:
+
+No terminal, digite os seguintes comandos:
+
+1 - Clone o repositório:
+   git clone git clone https://github.com/caio180/Projetos-em-python.git
+
+2 - Acesse a pasta do projeto:
+   cd cd Projetos-em-python/Projetos_python_Sql
+
+3 - Execute o arquivo principal:
+   python main.py
+
+## Tecnologias:
+
+- Python
+- SQLite
+
+## Autor:
+
+Desenvolvido por Caio Lima Viana
+LinkedIn: https://www.linkedin.com/in/caio-lima-viana-004759397/  
+GitHub: https://github.com/caio180
