@@ -18,7 +18,7 @@ Caso não existam produtos cadastrados, o sistema informa ao usuário.
 
 ## Pré-requisitos:
 
-- Python 3.x instalado
+- Python 3.13 instalado
 - Biblioteca SQLite3 (normalmente já vem junto com o python)
 
 ## Como executar o projeto:
