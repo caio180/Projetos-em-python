@@ -15,7 +15,7 @@ E caso não existam os contatos, o sistema informa ao usuário.
 
 ## Pré-requisitos:
 
-- Python 3.x instalado
+- Python 3.13 instalado
 
 ## Como executar o projeto:
 
