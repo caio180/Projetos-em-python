@@ -111,4 +111,4 @@ elif opcoes.lower() in ("4", "excluir"):
     
        
 cursor.close()
-banco.close()     
+banco.close()  
