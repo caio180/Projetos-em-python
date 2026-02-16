@@ -1,10 +1,12 @@
-import sqlite3
+import sqlite3 as sqlite
 import bcrypt
+import time
 
 def gerar_hash(senha):
     return bcrypt.hashpw(senha.encode(), bcrypt.gensalt())
 
-banco = sqlite3.connect("cadastros.db")
+       
+banco = sqlite.connect("cadastros.db")
 cursor = banco.cursor()
 
 cursor.execute("""
@@ -16,7 +18,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 """)
 
 
-opcoes = input("Digite a opção desejada: \n1) Criar uma conta \n2) Fazer login \n3) Alterar senha \n4) Excluir cadastro \n= ")
+opcoes = input("Digite a opção desejada: \n1) Criar uma conta. \n2) Fazer login. \n3) Alterar senha. \n4) Excluir conta. \n= ")
 
 if opcoes.lower() in ("1", "criar conta"):
     email = input("Crie um email, exemplo (claudio.silva@gmail.com): \n= ")
@@ -32,8 +34,8 @@ if opcoes.lower() in ("1", "criar conta"):
             VALUES (?, ?)
         """, (email, senha_hash))
             banco.commit()
-            print("Conta criada com sucesso !!")
-        except sqlite3.IntegrityError:
+            print("Conta criada com sucesso !")
+        except sqlite.IntegrityError:
             print("Erro: esse email já está cadastrado.")
 
 elif opcoes.lower() in ("2", "fazer login"):
@@ -42,7 +44,7 @@ elif opcoes.lower() in ("2", "fazer login"):
     
     cursor.execute("""
         SELECT senha FROM usuarios WHERE email = ?
-    """, (email))
+    """, (email,))
 
     resultado = cursor.fetchone()
 
@@ -58,7 +60,7 @@ elif opcoes.lower() in ("3", "alterar senha"):
     
     cursor.execute("""
         SELECT senha FROM usuarios WHERE email = ?
-    """, (email))
+    """, (email,))
 
     resultado = cursor.fetchone()
 
@@ -80,11 +82,33 @@ elif opcoes.lower() in ("3", "alterar senha"):
         print("Email ou senha incorretos.")
 
 elif opcoes.lower() in ("4", "excluir"):
+     email = input("Digite seu email: ")
+     senha = input("Digite sua senha: ")
+    
+     cursor.execute("""
+        SELECT id, senha FROM usuarios WHERE email = ? 
+    """, (email,))
 
-    id_usuario = input("Digite o id do seu usuário: ")
-    cursor.execute("SELECT id FROM usuarios WHERE id = ?", (id_usuario))
-    usuarios_cadastrados = cursor.fetchall()
+     resultado = cursor.fetchone()
 
+     if resultado and bcrypt.checkpw(senha.encode(), resultado[1]):
+        id_usuarios = resultado[0]
+        print(f"{id_usuarios}, este é o id do seu usuário.")
+        confirmacao = input("Tem certeza que deseja excluir a sua conta (s/n): ")
+        
+        if confirmacao.lower() == "s":
+            cursor.execute("""DELETE FROM usuarios WHERE id = ?""", (id_usuarios,))
+            print("Excluindo conta...")
+            time.sleep(3)
+            banco.commit()
+            print("Conta deletada com sucesso !")
 
+        else:
+            print("Cancelando operação...")
+            time.sleep(3)    
+     else:
+        print("ERRO: email ou senha incorretos.")
+    
+       
 cursor.close()
 banco.close()     
