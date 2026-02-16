@@ -44,7 +44,7 @@ No terminal, digite os seguintes comandos:
 
 ## Autor:
 
-Desenvolvido por Caio Lima Viana
+- Desenvolvido por Caio Lima Viana
 
-LinkedIn: https://www.linkedin.com/in/caio-lima-viana-004759397/  
-GitHub: https://github.com/caio180
+- LinkedIn: https://www.linkedin.com/in/caio-lima-viana-004759397/  
+- GitHub: https://github.com/caio180

@@ -16,8 +16,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 """)
 
 
-
-opcoes = input("Digite a opção desejada: \n1) Criar uma conta \n2) Fazer login \n3) Alterar senha \n= ")
+opcoes = input("Digite a opção desejada: \n1) Criar uma conta \n2) Fazer login \n3) Alterar senha \n4) Excluir cadastro \n= ")
 
 if opcoes.lower() in ("1", "criar conta"):
     email = input("Crie um email, exemplo (claudio.silva@gmail.com): \n= ")
@@ -33,7 +32,7 @@ if opcoes.lower() in ("1", "criar conta"):
             VALUES (?, ?)
         """, (email, senha_hash))
             banco.commit()
-            print("Conta criada com sucesso!!")
+            print("Conta criada com sucesso !!")
         except sqlite3.IntegrityError:
             print("Erro: esse email já está cadastrado.")
 
@@ -43,12 +42,12 @@ elif opcoes.lower() in ("2", "fazer login"):
     
     cursor.execute("""
         SELECT senha FROM usuarios WHERE email = ?
-    """, (email,))
+    """, (email))
 
     resultado = cursor.fetchone()
 
     if resultado and bcrypt.checkpw(senha.encode(), resultado[0]):
-        print("Login realizado com sucesso!!")
+        print("Login realizado com sucesso !")
     else:
         print("ERRO: email ou senha incorretos.")
 
@@ -59,7 +58,7 @@ elif opcoes.lower() in ("3", "alterar senha"):
     
     cursor.execute("""
         SELECT senha FROM usuarios WHERE email = ?
-    """, (email,))
+    """, (email))
 
     resultado = cursor.fetchone()
 
@@ -79,6 +78,13 @@ elif opcoes.lower() in ("3", "alterar senha"):
             print("Senha alterada com sucesso!")
     else:
         print("Email ou senha incorretos.")
+
+elif opcoes.lower() in ("4", "excluir"):
+
+    id_usuario = input("Digite o id do seu usuário: ")
+    cursor.execute("SELECT id FROM usuarios WHERE id = ?", (id_usuario))
+    usuarios_cadastrados = cursor.fetchall()
+
 
 cursor.close()
 banco.close()     
