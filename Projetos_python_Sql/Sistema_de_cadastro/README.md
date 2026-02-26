@@ -35,7 +35,7 @@ Caso não exista o cadastro, o sistema informa ao usuário.
 
 3 - Execute o arquivo principal:
    
-   python main.py
+   py main.py
 
 ## Tecnologias:
 
