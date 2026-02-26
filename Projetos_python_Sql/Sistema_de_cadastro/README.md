@@ -20,7 +20,7 @@ Caso não exista o cadastro, o sistema informa ao usuário.
 
 - Python 3.13 instalado
 - Biblioteca SQLite3 (normalmente já vem junto com o python)
-- Biblioteca bcrypt (Para instalar digite, `pip install bcrypt` no seu terminal.)
+- Biblioteca bcrypt (Para instalar digite, `py -m pip install bcrypt` no seu terminal.)
 - Biblioteca time (já vem junto com o python)
 
 ## Como executar o projeto:
