@@ -11,7 +11,7 @@ cursor = banco.cursor()
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS usuarios (
-    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    id INT PRIMARY KEY AUTOINCREMENT, 
     email TEXT UNIQUE NOT NULL,
     senha BLOB NOT NULL
 )
