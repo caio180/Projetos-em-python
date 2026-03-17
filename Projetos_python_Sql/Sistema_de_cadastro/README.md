@@ -1,6 +1,6 @@
 # Sistema de Cadastro e Login 
 
-Este projeto é um sistema simples de cadastro. Ele permite criar uma conta, fazer login, alterar sua senha e deletar sua conta.
+Este projeto é um sistema simples de cadastro. 
 
 Ele foi criado com fins educacionais e serve para praticar conceitos básicos de programação, autenticação de usuários e uso de banco de dados de forma prática.
 
