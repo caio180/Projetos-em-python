@@ -43,10 +43,9 @@ Caso não exista o cadastro, o sistema informa ao usuário.
 - Biblioteca SQLite3
 - Biblioteca bcrypt
 
-## Autor:
+## Autor / Desenvolvedor:
 
-- Desenvolvido por Caio Lima Viana
-
-- LinkedIn: https://www.linkedin.com/in/caio-lima-viana-004759397/  
-- GitHub: https://github.com/caio180
+- **Caio Lima Viana**  
+  -  LinkedIn: https://www.linkedin.com/in/caio-lima-viana-004759397/  
+  -  GitHub: https://github.com/caio180 
 
